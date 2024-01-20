@@ -3,6 +3,16 @@ pub struct Animal {
     name: String,
     age: i32,
 }
+
+impl Animal {
+    fn get_race(&self) -> String {
+        return self.race.clone();
+    }
+
+    fn get_name(&self) -> String {
+        return self.name.clone();
+    }
+}
   
 fn main() {
     let cat = Animal {
